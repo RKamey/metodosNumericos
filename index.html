@@ -34,6 +34,8 @@
     <div class="d-flex justify-content-center px-5 py-4 tab-content" id="pills-tabContent">
       <div class="tab-pane fade text-center" id="pills-lineal-container" role="tabpanel" aria-labelledby="pills-lineal-tab">
         Lineal
+      <br>
+      <br>
       <div id="lineal">
       <form id="formulario">
         <input type="number" placeholder="Valor de f(x)" id="fxLineal">
@@ -44,14 +46,38 @@
         <input type="number" placeholder="Escribe x" id="x">
         <br>
         <br>
-        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular">
+        <p><input type="number" placeholder="Resultado" id="resultado" readonly></p>
+        <br>
+        <br>
+        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="lineal();">
         <input type="button" class="btn btn-outline-secondary" name="Limpiar" value="Limpiar valores" onclick="refresh()">
       </div>
     </form>
       </div>
       
-      <div class="tab-pane fade" id="pills-cuadratica-container" role="tabpanel" aria-labelledby="pills-cuadratica-tab">
+      <div class="tab-pane fade text-center" id="pills-cuadratica-container" role="tabpanel" aria-labelledby="pills-cuadratica-tab">
         Cuadrática
+      <br>
+      <br>
+      <div id="cuadratica">
+      <form id="formularioC">
+        <input type="number" placeholder="Valor de f(x)" id="fxCuadratica">
+        <input type="number" placeholder="Escribe f(x0)" id="fx00">
+        <input type="number" placeholder="Escribe f(x1)" id="fx01">
+        <input type="number" placeholder="Escribe f(x2)" id="fx02">
+        <input type="number" placeholder="Escribe x0" id="x00">
+        <input type="number" placeholder="Escribe x1" id="x01">
+        <input type="number" placeholder="Escribe x2" id="x02">
+        <input type="number" placeholder="Escribe x" id="xx">
+        <br>
+        <br>
+        <p><input type="number" placeholder="Resultado" id="resultadoC" readonly></p>
+        <br>
+        <br>
+        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="cuadratica();">
+        <input type="button" class="btn btn-outline-secondary" name="Limpiar" value="Limpiar valores" onclick="refreshC()">
+      </form>
+      </div>
       </div>
 
       <div class="tab-pane fade" id="pills-lagrange-container" role="tabpanel" aria-labelledby="pills-lagrange-tab">
