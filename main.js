@@ -19,5 +19,19 @@ function lineal() {
 }
 
 function cuadratica() {
+    let fx0 = parseFloat(document.getElementById("fx00").value);
+    let fx1 = parseFloat(document.getElementById("fx01").value);
+    let fx2 = parseFloat(document.getElementById("fx02").value);
+    let x0 = parseFloat(document.getElementById("x00").value);
+    let x1 = parseFloat(document.getElementById("x01").value);
+    let x2 = parseFloat(document.getElementById("x02").value);
+    let x = parseFloat(document.getElementById("xx").value);
+    
+    let b0 = fx0;
+    let b1 = (fx1 - fx0) / (x1 - x0);
+    let b2 = (((fx2 - fx0) / (x2 - x0)) - (b1)) / (x2 - x1);
+    let resultado = (b0 + (b1 * (x - x0)) + (b2 * (x - x0) * (x-x1)));
 
+    parseFloat(document.getElementById("resultadoC").value = resultado)
+    return resultado;
 }
