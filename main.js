@@ -18,6 +18,14 @@ function lineal() {
     return result;
 }
 
+function errorRPL() {
+    let valorVerdadero = parseFloat(document.getElementById("fxLineal").value);
+    let errorVerdadero = valorVerdadero - lineal();
+    let errorPorcentual = `${(errorVerdadero / valorVerdadero) * 100} %`
+
+    parseFloat(document.getElementById("errorRPL").value = errorPorcentual)
+}
+
 function cuadratica() {
     let fx0 = parseFloat(document.getElementById("fx00").value);
     let fx1 = parseFloat(document.getElementById("fx01").value);
@@ -34,4 +42,8 @@ function cuadratica() {
 
     parseFloat(document.getElementById("resultadoC").value = resultado)
     return resultado;
+}
+
+function errorRPC() {
+    
 }
