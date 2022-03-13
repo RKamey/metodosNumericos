@@ -38,7 +38,6 @@
       <br>
       <div id="lineal">
       <form id="formulario">
-        <input type="number" class="redondeado text-center" placeholder="Valor de f(x)" id="fxLineal">
         <input type="number" class="redondeado text-center" placeholder="Escribe f(x0)" id="fx0">
         <input type="number" class="redondeado text-center" placeholder="Escribe f(x1)" id="fx1">
         <input type="number" class="redondeado text-center" placeholder="Escribe x0" id="x0">
@@ -47,10 +46,11 @@
         <br>
         <br>
         <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Resultado" id="resultado" readonly></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="errorRPL" readonly onclick="errorRPL()"></p>
+        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Valor Verdadero" id="valorV"></p>
+        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="errorRPL" readonly></p>
         <br>
         <br>
-        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="lineal();">
+        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="lineal(); errorRL()">
         <input type="button" class="btn btn-outline-secondary" name="Limpiar" value="Limpiar valores" onclick="refresh()">
       </div>
     </form>
@@ -73,10 +73,11 @@
         <br>
         <br>
         <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Resultado" id="resultadoC" readonly></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="errorRPC" readonly onclick="errorRPC()"></p>
+        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Valor Verdadero" id="vVcua"></p>
+        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="eRPC" readonly></p>
         <br>
         <br>
-        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="cuadratica()">
+        <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="cuadratica(); errorRPC()">
         <input type="button" class="btn btn-outline-secondary" name="Limpiar" value="Limpiar valores" onclick="refreshC()">
       </form>
       </div>
