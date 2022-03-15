@@ -25,7 +25,7 @@ function errorRL() {
     let ekis1 = parseFloat(document.getElementById("x1").value);
     let ekis = parseFloat(document.getElementById("x").value);
     let lineal = (efe0 + (efe1 - efe0) / (ekis1 - ekis0)) * (ekis - ekis0);
-    //let prueba = 10;
+    
     let valorVerdadero = parseFloat(document.getElementById("valorV").value);
     let errorVerdadero = valorVerdadero - lineal;
     let errorPorcentual = (errorVerdadero / valorVerdadero) * 100;

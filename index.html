@@ -38,16 +38,20 @@
       <br>
       <div id="lineal">
       <form id="formulario">
-        <input type="number" class="redondeado text-center" placeholder="Escribe f(x0)" id="fx0">
-        <input type="number" class="redondeado text-center" placeholder="Escribe f(x1)" id="fx1">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x0" id="x0">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x1" id="x1">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x" id="x">
+        <input type="number" class="izquierda text-center" placeholder="Escribe x0" id="x0">
+       <input type="number" class="derecha text-center" placeholder="Escribe f(x0)" id="fx0">
         <br>
         <br>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Resultado" id="resultado" readonly></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Valor Verdadero" id="valorV"></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="errorRPL" readonly></p>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x1" id="x1">
+        <input type="number" class="derecha text-center" placeholder="Escribe f(x1)" id="fx1">
+        <br>
+        <br>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x" id="x">
+        <br>
+        <br>
+        <input type="number" style="width: 27%" class="resultado text-center" placeholder="Resultado" id="resultado" readonly>
+        <input type="number" style="width: 27%" class="derecha text-center" placeholder="Valor Verdadero" id="valorV">
+        <input type="number" style="width: 27%" class="resultado text-center" placeholder="Error relativo porcentual" id="errorRPL" readonly>
         <br>
         <br>
         <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="lineal(); errorRL()">
@@ -62,19 +66,26 @@
       <br>
       <div id="cuadratica">
       <form id="formularioC">
-        <input type="number" class="redondeado text-center" placeholder="Valor de f(x)" id="fxCuadratica">
-        <input type="number" class="redondeado text-center" placeholder="Escribe f(x0)" id="fx00">
-        <input type="number" class="redondeado text-center" placeholder="Escribe f(x1)" id="fx01">
-        <input type="number" class="redondeado text-center" placeholder="Escribe f(x2)" id="fx02">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x0" id="x00">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x1" id="x01">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x2" id="x02">
-        <input type="number" class="redondeado text-center" placeholder="Escribe x" id="xx">
         <br>
         <br>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Resultado" id="resultadoC" readonly></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Valor Verdadero" id="vVcua"></p>
-        <p><input type="number" style="width: 17%" class="redondeado text-center" placeholder="Error relativo porcentual" id="eRPC" readonly></p>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x0" id="x00">
+        <input type="number" class="derecha text-center" placeholder="Escribe f(x0)" id="fx00">
+        <br>
+        <br>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x1" id="x01">
+        <input type="number" class="derecha text-center" placeholder="Escribe f(x1)" id="fx01">
+        <br>
+        <br>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x2" id="x02">
+        <input type="number" class="derecha text-center" placeholder="Escribe f(x2)" id="fx02">
+        <br>
+        <br>
+        <input type="number" class="izquierda text-center" placeholder="Escribe x" id="xx">
+        <br>
+        <br>
+        <input type="number" style="width: 27%" class="resultado text-center" placeholder="Resultado" id="resultadoC" readonly>
+        <input type="number" style="width: 27%" class="especial text-center" placeholder="Valor Verdadero" id="vVcua">
+        <input type="number" style="width: 27%" class="resultado text-center" placeholder="Error relativo porcentual" id="eRPC" readonly>
         <br>
         <br>
         <input type="button" class="btn btn-outline-primary" name="Calcular" value="Calcular" onclick="cuadratica(); errorRPC()">
